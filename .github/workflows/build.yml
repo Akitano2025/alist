@@ -15,14 +15,13 @@ jobs:
     strategy:
       matrix:
         platform: [ubuntu-latest]
-        target: 
-          - darwin-amd64
-          - darwin-arm64
-          - windows-amd64
-          - linux-arm64-musl
-          - linux-amd64-musl
-          - windows-arm64
-          - android-arm64
+        target:
+          - linux-mips32le
+          - linux-mipsle
+          - linux-mipsel
+          - linux-mips32le-musl
+          - linux-mipsle-musl
+          - linux-mipsel-musl
     name: Build
     runs-on: ${{ matrix.platform }}
     steps:
