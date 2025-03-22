@@ -23,6 +23,9 @@ jobs:
           - linux-amd64-musl
           - windows-arm64
           - android-arm64
+          - linux-armeabihf-musl
+          - linux-musleabihf
+          - linux-musleabi
     name: Build
     runs-on: ${{ matrix.platform }}
     steps:
