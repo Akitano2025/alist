@@ -16,9 +16,8 @@ jobs:
       matrix:
         platform: [ubuntu-latest]
         target: 
-          - linux-musleabihf-armv7l
-          - linux-musl-mipsle
-
+          - linux-armv7l-musleabihf
+          - linux-mipsle-musl
     name: Build
     runs-on: ${{ matrix.platform }}
     steps:
