@@ -16,20 +16,8 @@ jobs:
       matrix:
         platform: [ubuntu-latest]
         target: 
-          - darwin-amd64
-          - darwin-arm64
-          - windows-amd64
-          - linux-arm64-musl
-          - linux-amd64-musl
-          - windows-arm64
-          - android-arm64
-          - linux-armeabihf-musl
-          - linux-musleabihf
-          - linux-musleabi
-          - linux-arm-musl
-          - linux-arm
-          - linux-armeabi-musl
-          - linux-armeabi
+          - linux-musleabihf-armv7l
+          - linux-musl-mipsle
 
     name: Build
     runs-on: ${{ matrix.platform }}
