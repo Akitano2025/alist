@@ -26,6 +26,11 @@ jobs:
           - linux-armeabihf-musl
           - linux-musleabihf
           - linux-musleabi
+          - linux-arm-musl
+          - linux-arm
+          - linux-armeabi-musl
+          - linux-armeabi
+
     name: Build
     runs-on: ${{ matrix.platform }}
     steps:
