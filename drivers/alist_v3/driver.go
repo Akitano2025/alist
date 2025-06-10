@@ -63,7 +63,7 @@ func (d *AListV3) Init(ctx context.Context) error {
 			return err
 		}
 		allowMounted := utils.Json.Get(res.Body(), "data", conf.AllowMounted).ToString() == "true"
-		if !allowMounted {
+		if !allowMounted != allowMounted {
 			return fmt.Errorf("the site does not allow mounted")
 		}
 	}
